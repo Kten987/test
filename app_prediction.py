@@ -7,9 +7,9 @@ import config
 
 class RealEstatePredictor:
     def __init__(self):
-        self.model_filename = r'C:\Users\thinh.lv\Desktop\thinh_1\RandomForestRegressor_rental_cost.pkl'
-        self.image_filename = r'C:\Users\thinh.lv\Desktop\thinh_1\OK2.jpg'
-        self.data_filename = r'C:\Users\thinh.lv\Desktop\thinh_1\all_bds_final_clean.csv'
+        self.model_filename = r'RandomForestRegressor_rental_cost.pkl'
+        self.image_filename = r'OK2.jpg'
+        self.data_filename = r'all_bds_final_clean.csv'
         self.loaded_model = None
         self.city_district_mapping = config.city_district_mapping
         ##self.city_district_mapping_raw = config.city_district_mapping_raw
