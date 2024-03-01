@@ -38,9 +38,9 @@ def csv_to_nested_dict(csv_file):
     return nested_dict
 
 # Đường dẫn tới file CSV
-df_csv = pd.read_csv(r'C:\Users\thinh.lv\Desktop\thinh_1\all_bds_final_clean.csv',usecols= ['City','District','Ward','Street'],encoding='utf-8').drop_duplicates()
-df_csv.dropna().to_csv(r'C:\Users\thinh.lv\Desktop\thinh_1\location_clean_new.csv', index=False, mode = 'w', encoding="utf-8")
-csv_file_path = r'C:\Users\thinh.lv\Desktop\thinh_1\location_clean_new.csv'
+df_csv = pd.read_csv(r'all_bds_final_clean.csv',usecols= ['City','District','Ward','Street'],encoding='utf-8').drop_duplicates()
+df_csv.dropna().to_csv(r'location_clean_new.csv', index=False, mode = 'w', encoding="utf-8")
+csv_file_path = r'location_clean_new.csv'
 
 # Chuyển đổi từ file CSV thành nested dictionary
 city_district_mapping = csv_to_nested_dict(csv_file_path)
